@@ -1,50 +1,29 @@
+
+
+body{
+	background: url("../img/lunettes.jpg");
+	font-family: consolas,monospace;
+	font-size: 25px;
+	color: white;
+	justify-content: center;
+	margin: 10vw;
+}
 p{
 	color: white
 }
-/*.gradient {
-  background-image:
-    linear-gradient(
-      to left, 
-      red, #f06d06
-    );
-}*/
-body{
-	/*background-image: url("img/fond d'écran.png") no-repeat;*/
-	background: rgb(0,0,255);
-	background: linear-gradient(45deg, rgba(0,0,255,1) 0%, rgba(255,0,0,1) 50%, rgba(255,255,0,1) 100%);
-	font-family: verdana, Times New Roman
-}
-p.début{
-	font-size: 20px;
-}
 h1{
-	text-align: center;
-	border-color: white;
-	border-radius: 10px;
-	border-style: solid;
-	font-family: Times New Roman;
+	font-size: 75px;
 }
-p.fin{
-	font-size: 25px;
-}
-h1{
-	background-color: transparent;
-	color: white;
-}
+
 a{
 	color:white;
-	text-transform: lowercase;
-	text-decoration-style: transparent;
-	border-style: solid;
-	border-radius: 10px;
-	border-spacing: 10px
 }
-a:hoover{
-	color:yellow;
+
+a:hover{
+	color: black;
+	
 }
 footer{
 	border-color: white
 }
-nav.menu-nav ul li{
-	display: inline-block;
-}
+

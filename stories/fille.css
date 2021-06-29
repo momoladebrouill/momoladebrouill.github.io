@@ -4,8 +4,9 @@ h2{
 	border-radius: 50px;
 }
 body{
-	background-color:black;
-	/*background:linear-gradient(180deg,#2a3444 0%, #fadb44 100%) ;*/
+	margin: 5vw;
+	background-color:rgb(50,0,0);
+
 }
 p{
 	font-family: Verdana;
@@ -39,6 +40,10 @@ img{
 
 footer{
 	color:white;
+}
+jtm{
+	font-size: 25px;
+	color: white;
 }
 a{
 	color:white;
