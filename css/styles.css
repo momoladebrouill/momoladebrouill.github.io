@@ -1,29 +1,27 @@
 
-
 body{
 	background: url("../img/lunettes.jpg");
 	font-family: consolas,monospace;
 	font-size: 25px;
 	color: white;
-	justify-content: center;
 	margin: 10vw;
 }
-p{
-	color: white
-}
-h1{
-	font-size: 75px;
+#menu-outer {
+	height: auto;
 }
 
-a{
-	color:white;
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: auto ;
 }
 
-a:hover{
-	color: black;
-	
+ul#horizontal-list {
+	list-style: none;
+	padding-top: 0;
+	}
+	ul#horizontal-list li {
+		display: inline;
+	}
+img{
+	width:  4vw;
 }
-footer{
-	border-color: white
-}
-
