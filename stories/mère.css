@@ -1,6 +1,6 @@
 
 body{
-	justify-content: center;
+
 	margin: 10vw;
 	background: rgb(50,0,0);
 	font-family: cursive;
@@ -19,31 +19,23 @@ h1{
 	margin-bottom: 1vw;
 }
 h2{
-	color: #ff7373;
+	color: #fadb44;
 	font-family: sans-serif;
 	margin: none;
 }
-div{
-	float: left;
-	margin: 1vw;
-}
-div.prems{
-	margin-left: 0px;
-}
-div.glob{
-	float: top;
-	padding:  1vw;
+
+table{
+	margin-bottom: 50px;
 }
 a{
-	float:  left;
+	justify-content: center;
 	color: white;
 	text-decoration: none;/*pour elenver les préféets*/
-	background-color: #03DAC6;
-	border-radius:1vw;
-	width: 33%;
+	background-color: #00c0a0;
+	border-radius:50px;
+	width: 90%;
 	box-shadow:3px 3px 3px blue;
 	padding: 0.5vw;
-	overflow-wrap: true;
 }
 a:hover{
 	background-color: #fadb44;

@@ -1,72 +1,24 @@
-h2{
-	color: #fadb44;
-	font-family: sans-serif;
-	border-radius: 50px;
-}
+
 body{
 	margin: 5vw;
 	background-color:rgb(50,0,0);
-
-}
-p{
-	font-family: Verdana;
-	font-weight: boldest;
 	color: white;
-	font-size: 25 px;
-} 
-.poeme{
-	text-align: center
+	font-family: sans-serif;
+	font-size: 1vw;
 }
-li{
-	color: white;
-	font-family:Verdana;
-	list-style-type:'- ';
-}
-aside{
-	float: right;
-}
-section{
-	text-align: center;
-}
-article{
-	float:left;
-}
-
-img{
-	border-style: solid;
-	border-radius: 10px;
-	border-color: white;
-}
-
-footer{
-	color:white;
-}
-jtm{
-	font-size: 25px;
-	color: white;
+h1{
+	color: #fadb44;
 }
 a{
-	color:white;
-	font-family: Verdana;
-	background-color: #03DAC6;
 	text-decoration: none;
-	border-radius:10px;
-	width: 33%;
-	box-shadow:3px 3px 3px blue;
-	padding: 10px;
+	color: white;
+	background-color: #03DAC6;
+	box-shadow: 3px 3px 3px blue;
+	border-radius: 5px;
+	padding:  .5vw;
 }
 a:hover{
+	
 	background-color: #fadb44;
-	box-shadow:3px 3px 3px #ff7373;
-	color:white;
-}
-nav{
-	text-align: left;
-}
-.classique{
-	border-color:black;
-}
-.menu{
-	background-color: #ff7373;
-	box-shadow: 3px 3px 3px blue;
+	box-shadow: 3px 3px 3px #ff7373;
 }

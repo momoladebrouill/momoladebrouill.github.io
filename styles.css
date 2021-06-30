@@ -1,6 +1,6 @@
 
 body{
-	background: url("../img/lunettes.jpg");
+	background: url("img/lunettes.jpg");
 	font-family: consolas,monospace;
 	font-size: 25px;
 	color: white;
@@ -23,5 +23,14 @@ ul#horizontal-list {
 		display: inline;
 	}
 img{
-	width:  4vw;
+	width:  10vw;
+}
+a{
+	color: white;
+}
+a:visited{
+	text-decoration: none
+}
+a:hover{
+	color: rgb(200,200,200);
 }
