@@ -1,7 +1,7 @@
 
 body{
 	background: url("img/fond.png");
-	font-family: consolas,monospace;
+	font-family: Poppins;
 	font-size: 25px;
 	color: white;
 	margin: 10vw;
@@ -9,8 +9,9 @@ body{
 }
 
 h1{
-	font-family:sans-serif;
-	font-size: 10vw;
+	font-family:Poppins;
+	font-size: 5
+	vw;
 	margin-bottom: 1vh;
 }
 h2{
