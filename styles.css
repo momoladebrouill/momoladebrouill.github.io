@@ -1,32 +1,46 @@
 
 body{
-	background: url("img/fond.png");
+	background: linear-gradient(blue,red);
 	font-family: Poppins;
 	font-size: 25px;
 	color: white;
 	margin: 10vw;
-	
 }
 
+#gis{
+	background: linear-gradient(90deg,
+		rgba(0,0,0,0.4),
+		rgba(255,255,0,0.4),
+		rgba(0,255,0,0.4));
+
+}
 h1{
-	font-family:Poppins;
-	font-size: 5
-	vw;
-	margin-bottom: 1vh;
+	background: linear-gradient(90deg,
+		rgba(255,255,255,0.5),
+		rgba(255,255,255,0.1));
+	font-size: 3vw;
+	padding: 1vw;
+	box-shadow:10px 10px 10px white, 10px -10px -10px white;
 }
 h2{
 	padding-left: 2vw;
-	background-color: rgba(255,255,0,0.5);
+	background: rgba(255,255,255,0.5)
 }
 img{
 	width:  5vw;
 }
+table{
+	width: 100%;
+}
 td{
 	text-align: center;
-	border: 1vw solid transparent;
+	border-top: 1vw solid transparent;
+	/*border-right: 100% solid transparent ;
+	border-left: 33% solid transparent;*/
 }
 a{
 	color: white;
+	margin: 1vw;
 }
 a:visited{
 	text-decoration: none
@@ -38,5 +52,6 @@ img:hover{
 	width: 6vw;
 }
 .text{
+	margin:  0px;
 	text-decoration: none;
 }
