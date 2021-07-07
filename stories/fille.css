@@ -1,7 +1,7 @@
 
 body{
 	margin: 5vw;
-	background-color:rgb(50,0,0);
+	background: linear-gradient(rgb(50,0,0),rgb(100,0,0));
 	color: white;
 	font-family: sans-serif;
 	font-size: 1vw;
@@ -16,6 +16,7 @@ a{
 	box-shadow: 3px 3px 3px blue;
 	border-radius: 5px;
 	padding:  .5vw;
+	margin-bottom: 100%;
 }
 a:hover{
 	
