@@ -25,14 +25,17 @@ h1{
 	animation-direction: alternate;*/
 }
 
-@keyframes title{
-	from{
-		color: rgb(255, 255, 255);
-		background-color: rgb(0, 0, 0);
+@keyframes link{
+	0%{
+		color: hsl(0, 100%, 50%);
 	}
-	to{
-		color: rgb(0, 0, 0);
-		background-color: rgb(255, 255, 255);
+	50%{
+		color: hsl(180, 100%, 50%);
+		
+	}
+	100%{
+		color: hsl(360, 100%, 50%);
+		
 	}
 }
 
@@ -54,17 +57,25 @@ td{
 }
 
 a{
-	color: white;
+	text-decoration: none;
+	color: black;
 	margin: 1vw;
+	font-weight:  bold;
+	/*animation-name: link;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;*/
 }
-
+.text{
+	color: white;
+	animation: none;
+	text-decoration: none;
+	margin:  0px;
+}
 a:visited{text-decoration: none}
 
-a:hover{color: rgb(200,200,200);}
+a:hover{color: rgb(255,255,255);}
 
 img:hover{width: 6vw;}
 
-.text{
-	margin:  0px;
-	text-decoration: none;
-}
+

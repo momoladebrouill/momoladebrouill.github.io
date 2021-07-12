@@ -16,9 +16,10 @@ rd='''
 	</head>
 	<body>
 	<body>
-	<h1> Les meilleurs sites du web !</h1>
+	<h1> Mmh, interressant comme page ... 🧐</h1>
 	<p> Voici une petite liste des meilleurs sites sur lequels je suis tombés durant mon voyage sur le net, j'espère que vous y trouverez votre bonheur !</p>
-	<table>'''
+	<a href="https://momoladebrouill.github.io">Après y'a toujours mon site aussi🍉</a>
+    <table>'''
 
 while i<len(antes) and fin!=-1 and '<A' in antes[i:]:
     
@@ -49,7 +50,7 @@ while i<len(antes) and fin!=-1 and '<A' in antes[i:]:
     #mettre en forme dans le nouveaux fichier
     rd+='''
         <tr>
-		<td>
+		<td class="imag">
 			<img src={img}">
 		</td>
 		<td>
@@ -57,7 +58,7 @@ while i<len(antes) and fin!=-1 and '<A' in antes[i:]:
 		</td>
 	</tr>\n'''.format(**dc)
    
-rd+='''</table>	</body> 
+rd+='''</table> Hey man t'es arrivé au bout ? zarma t'as tout fait ?</body> 
 </html>'''  
 f=open('favri.html','w',encoding='utf-8')
 f.write(rd)
