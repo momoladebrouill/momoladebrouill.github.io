@@ -1,41 +1,37 @@
 import json
 f=open('rendu.json','r',encoding='utf-16').read()
 c=json.loads(f)
-rd='''
-<!DOCTYPE html>
+rd='''<!DOCTYPE html>
 <html>
-	<head>
-		<title>le web</title>
-		<meta charset="utf-8" lang="fr">
-		<link rel="icon" href="../img/µ.svg">
-		<link rel="stylesheet" href="styles.css">
-		<link rel="stylesheet"
+<head>
+	<meta charset="utf-8">
+	<title>jean</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Poppins">
-	</head>
-	<body>
-	<body>
-	<h1> Mmh, interressant comme page ... 🧐</h1>
-	<p> Voici une petite liste des meilleurs sites sur lequels je suis tombés durant mon voyage sur le net, j'espère que vous y trouverez votre bonheur !</p>
-	<a href="https://momoladebrouill.github.io">Après y'a toujours mon site aussi🍉</a>
-    <table>'''
+</head>
+<body>
+<h1> Mes découvertes du net </h1>
+Une liste assez longue de tous les sites que j'ai trouvés sympas durant mon voayge sur l'océan du net<br>
+En cours d'amélioration d'ailleur hihi
+
+    '''
 for dc in c:
-    rd+='''
-        <tr>
-		<td class="imag">
-			<img src={img}>
-		</td>
-		<td>
-			<a href="{link}" target={target}>{name}</a>
-		</td>
-		
-	</tr>
-	<tr>
-	<td></td>
-	<td class='des'>{des}</td>
-	</tr>
-	\n'''.format(**dc)
-rd+='''</table> Hey man t'es arrivé au bout ? zarma t'as tout fait ?</body> 
+    rd+="<div>"
+    if dc["img"]:
+        rd+='''
+            <table>
+            <tr>
+            <td><img src="{img}"></img></td>
+            <td><a href="{link}" target="{target}">{name}</a></td>
+            </tr>
+            </table>'''.format(**dc)
+    else:
+        rd+="""<a href="{link}" target="{target}">{name}</a><br>""".format(**dc)
+    rd+='''{des}
+	</div>'''.format(**dc)
+rd+='''</table></body>
 </html>'''  
-f=open('test.html','w',encoding='utf-16')
+f=open('favri.html','w',encoding='utf-8')
 f.write(rd)
 f.close()
