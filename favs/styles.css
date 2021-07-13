@@ -6,14 +6,16 @@ body{
 	background:linear-gradient(#e66465, #9198e5);
 }
 img{
-	width: 1vw;
+	height: 25px;
 }
 table{
 	margin: 1vw;
 }
 td{
-	width : 45%;
-	padding-bottom: 50px
+	padding-bottom: 0px;
+}
+.des{
+	padding-bottom: 50px;
 }
 
 .imag{
@@ -28,3 +30,4 @@ a:visited{
 }
 a:hover{
 	color: rgb(100,100,100);
+}
