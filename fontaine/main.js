@@ -13,7 +13,7 @@ document.addEventListener("keydown", keydown);
 document.addEventListener("keyup",keyup);
 canvas.addEventListener("mousedown",mousedown);
 canvas.addEventListener("mousemove",mousemove);
-canvas.addEventListener("wheel",roll);
+canvas.addEventListener("wheel",roll,{passive:true});
 window.addEventListener("mouseup",mouseup);
 function keyup(e){v=e.keyCode}
 function keydown(e){v=e.keyCode}
@@ -50,26 +50,29 @@ class paillette{
 
 
 }
-let x,y,next;
+function hex(val) {
+	let t=parseInt(val/50*255).toString(16)
+	if (t.length==1){ t='0'+t}
+	return t
+}
+let x,y,next,fps1,fps2;
 let force=5,fond=0;
-let confettis=[]
-let fontaines=[]
-const el = document.querySelector('div');
-let fps1,fps2;
+let confettis=[],fontaines=[];
+const helper=document.getElementById("shell")
 fps1=new Date()
 function bLoop() {
 	fps2=new Date()
 	fond+=0.1
 	fond=fond%360
 	context.beginPath()
-	context.fillStyle='hsl('+fond+',50%,'+Math.abs(force)*2+"%)"
+	context.fillStyle="#"+hex(Math.abs(force)).repeat(3)
 	context.fillRect(0,0,W,H)
 	context.fill()
 	context.closePath()
 	for (var i = fontaines.length - 1; i >= 0; i--) {
 		confettis.push(new paillette(fontaines[i][0],fontaines[i][1]))
 	}
- 	//confettis.push(new paillette(x,y))
+
 	context.font = "50px cursive";
 	context.fillStyle = "white";
 	context.textBaseline = "middle"
@@ -82,11 +85,12 @@ function bLoop() {
 		}
 	}
 	confettis=[...next]
-	el.textContent="cliquez pour ajouter une fontaine";
-	context.fillStyle="white"
+
+	context.fillStyle="#"+hex(50-Math.abs(force)).repeat(3)
+	helper.style.color="#"+hex(50-Math.abs(force)).repeat(3)
 	context.fillText(
 		"force: "+force
-		+"  particules: "+confettis.length
+		+"/50  particules: "+confettis.length
 		+" fps: "+Math.round(100/(fps2-fps1))*10
 		,0,H-20)
 	fps1=fps2
