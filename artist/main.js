@@ -37,22 +37,23 @@ function bouge(p){
 }
 
 function actu_mousepos() {
-	mousex=parseInt((mouseRlx-dep.fkx)/size.fk)
-    mousey=parseInt((mouseRly-dep.fky)/size.fk)
+	mousex=Math.round((mouseRlx-dep.fkx)/size.fk-.5)
+    mousey=Math.round((mouseRly-dep.fky)/size.fk-.5)
 }
 
 function scroll(cb){
+	const ch=size.rl/8
 	if(cb.deltaY<0){
-		size.rl+=5;
-		dep.rlx-=mousex*5
-		dep.rly-=mousey*5
+		dep.rlx-=mousex*ch
+		dep.rly-=mousey*ch
+		size.rl+=ch;
 	}else if(cb.deltaY>0){
-		size.rl-=5
+		size.rl-=ch
 		if(size.rl<0){
 			size.rl=1
 		}else{
-			dep.rlx+=mousex*5
-			dep.rly+=mousey*5
+			dep.rlx+=mousex*ch
+			dep.rly+=mousey*ch
 		}
 	}
 }
@@ -77,7 +78,13 @@ function keydown(e) {
 			coulSel=lieux[[mousex,mousey]]
 			break;
 		case 32:
-			helpmode= !helpmode
+			if(helper.style.display == "block")
+			{
+				helper.style.display = "none";
+			}
+			else{
+				helper.style.display = "block";
+			}
 			break;
 		case 17:
 			if (context.shadowBlur==15){
@@ -129,8 +136,6 @@ let size={'fk':50,'rl':50}
 let lieux={},key_dict={};
 let mode=''
 let coulSel=Math.round(Math.random()*10)/10
-
-let helpmode=true;
 
 let mousex=10
 let mousey=10
@@ -201,8 +206,6 @@ function bLoop() {
 	context.stroke();
 	//helper.textContent=coulSel
 	helper.style.color=coul(coulSel)
-	if(helpmode){helper.style.display = "block";}
-	else{helper.style.display = "none";}
 
 	requestAnimationFrame(bLoop)
 }
