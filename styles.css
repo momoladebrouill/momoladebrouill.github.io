@@ -56,7 +56,11 @@ h1{
 #pocodemomo{
 	width: 80%;
 	margin-left: 10%;
-
+}
+purplePD{
+	 background: -webkit-linear-gradient(45deg,#a800a8,purple);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
 }
 iframe{
 	width: 400px;
