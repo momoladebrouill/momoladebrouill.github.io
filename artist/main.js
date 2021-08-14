@@ -42,7 +42,7 @@ function actu_mousepos() {
 }
 
 function scroll(cb){
-	const ch=size.rl/8
+	const ch=size.rl/64
 	if(cb.deltaY<0){
 		dep.rlx-=mousex*ch
 		dep.rly-=mousey*ch
