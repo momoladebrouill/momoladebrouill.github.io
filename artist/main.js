@@ -42,7 +42,7 @@ function actu_mousepos() {
 }
 
 function scroll(cb){
-	const ch=size.rl/8
+	const ch=size.rl/32
 	if(cb.deltaY<0){
 		dep.rlx-=mousex*ch
 		dep.rly-=mousey*ch
@@ -92,6 +92,21 @@ function keydown(e) {
 			}else{
 				context.shadowBlur=15
 			}
+			break
+		case 77:
+			scroll({deltaY:1})
+			break
+		case 80:
+			scroll({deltaY:-1})
+			break
+		case 65:
+			mode='e'
+			context.strokeStyle = "black";
+			context.fillStyle="black"
+			bLoop()
+			let img=canvas.toDataURL('image/png').replace("image/png", "image/octet-stream");
+			window.location.href = img;
+			mode=''
 		default:
 			key_dict[v]=true
 	}
