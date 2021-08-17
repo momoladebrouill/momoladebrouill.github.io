@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#shell{
+			position: absolute;
+			color: red;
+			height: 100%;
+		}
+		.pic{
+			width: 5vh;
+			height: 10%;
+			transition: width 1s;
+			
+		}
+		.pic:hover{
+			width:10vh ;
+		}
+
+		canvas{
+				position: static;
+                display:block;
+            }
+            html,body{
+                margin:0px;
+            }
+	</style>
+	<title>𝕿𝖍𝖊 𝖌𝖗𝖆𝖋𝖋𝖊𝖚𝖗</title>
+</head>
+
+<body>
+	<div id="shell">
+		<script type="text/javascript">
+			for(let i=0;i<10;i++){
+				document.write('<div onclick="set_coul(+'+i*36+')" class="pic" style="background-color:hsl('+i*36+',50%,50%);"></div>')
+			}
+		</script>
+	</div>
+	<canvas id="fen"></canvas>
+
+	<script src="main.js"></script>
+	
+	
+       
+</body>
+</html>
