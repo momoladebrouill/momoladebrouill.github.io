@@ -15,7 +15,7 @@ context.lineWidth=0
 context.shadowOffsetX=5
 context.shadowOffsetX=5
 context.shadowBlur=10
-
+//let graph=[new Audio('crish.wav'),new Audio('crish2.wav')]
 canvas.addEventListener("mousedown",mousedown);
 canvas.addEventListener("mousemove",mousemove);
 canvas.addEventListener("wheel",scroll,{"passive":true});
@@ -29,7 +29,7 @@ function scroll(e) {
 	context.strokeStyle=hsl
 }
 function mouseup(e){IsDown=false;oldpos=false}
-function mousedown(e){IsDown=true}
+function mousedown(e){IsDown=true;}//graph[parseInt(Math.random()*2)].play()}
 function mousemove(e){
 	if(IsDown){
 		pos=[e.offsetX,e.offsetY]

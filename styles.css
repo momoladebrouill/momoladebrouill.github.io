@@ -1,23 +1,28 @@
 body{
-	background-color: black;
+	background-color: rgb(50,0,0);
 	color: white;
 	font-family: Poppins ;
 	font-weight: bold;
 	font-size: 25pt;
+}
+:root{
+	--lien: yellow;
 }
 table{
 	height: 100%;
 }
 a{
 	text-decoration: none;
-	color: var(tomato,'a');
+	color: white;
+	text-shadow: 5px 5px 10px orange;
 	font-weight:  bold;
+	transition: transform 1s,text-shadow 1s;
 }
 a:visited{text-decoration: none}
-a:hover{color: orangered;}
+a:hover{text-shadow: 10px 10px 10px yellow;
+		transform: rotate(45deg);}
 .text{
-	color: var('a');
-	animation: none;
+	color: white;
 	text-decoration: none;
 	margin:  0px;
 }
@@ -30,12 +35,13 @@ div{
 
 table{width: 100%;}
 
-h1{
-	font-size: 100px;
-	position: relative;
-}
+
 h2{
-	color: white;
+	color: orange;
+	transition: margin 1s;
+}
+h2:hover{
+	margin-left: 10vw;
 }
 .doissier{
 	width: 100%;
@@ -45,20 +51,36 @@ h2{
 	padding-left: 33%;
 	padding-right: 33%;
 	width: 33%;}
-.ico{width:  5vw;}
+.ico{width:  5vw;
+	transition: width 1s;}
 .ico:hover{width: 4vw}
-#col0{background-color: darkred;}
-#col1{background-color: tomato;}
-#col2{background-color: red}
-#col3{background-color: red;}
+#col0{background-color: red;}
+#col1{background-color: orange;}
+#col2{background-color: yellow}
+#col3{background-color: cyan;}
 
-#logo{
-	width: 500px;
-	height: 500px;
+
+
+h1{
+	font-size: 100px;
+	font-weight: bold;
+	width: fit-content;
+	background: -webkit-linear-gradient(0deg,cyan,yellow,orange,red);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	transition: margin 3s
+	/*text-shadow: 0px 50px 0px cyan,
+				0px 100px 0px yellow,
+				0px 150px 0px orange,
+				0px 200px 0px red;*/
+
+}
+h1:hover{
+	content: "a";
+	margin-bottom: 100%;
 }
 #pocodemomo{
-	width: 50vw;
-	background-color: red;
+	width: 100%;
 }
 purplePD{
 	 background: -webkit-linear-gradient(45deg,#a800a8,purple);
@@ -71,4 +93,7 @@ iframe{
 }
 #maison{
 	width:10px;
+}
+#fond{
+	height: 400px;
 }
