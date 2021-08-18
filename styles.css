@@ -5,6 +5,9 @@ body{
 	font-weight: bold;
 	font-size: 25pt;
 }
+img{
+	
+}
 :root{
 	--lien: yellow;
 }
@@ -91,9 +94,7 @@ iframe{
 	width: 100%;
 	height: 400px;
 }
-#maison{
-	width:10px;
-}
+
 #fond{
 	height: 400px;
 }
