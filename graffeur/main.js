@@ -50,12 +50,14 @@ function mousemove(e){
 function hey(num) {
 	console.log(num)
 }
-function set_coul(val) {
+function set_coul(val,box) {
 	coul=val
 	let hsl='hsl('+coul+',50%,50%)'
 	context.shadowColor=hsl
 	context.fillStyle=hsl
 	context.strokeStyle=hsl
+	box.style.backgroundColor='hsl('+coul+',100%,50%)'
+	setTimeout(() => { box.style.backgroundColor=hsl; }, 1000);
 }
 function dist(a,b){return Math.sqrt((a[0]-b[0])**2+(a[1]-b[1])**2)}
 function draw(pos) {

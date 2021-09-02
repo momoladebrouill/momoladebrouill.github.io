@@ -16,10 +16,12 @@ function scroll(e) {
 	for (var i = bulles.length - 1; i >= 0; i--) {
 		bulles[i].vec[1]-=val
 	}
-	bulles.push(new Circle())
+	bulles.push(new Circle(indexBul))
+	indexBul++
 }
 class Circle{
-	constructor(){
+	constructor(ind){
+		this.pos=ind
 		this.x=Math.random()*W
 		this.y=Math.random()*H
 		this.vec=[(Math.random()-.5)*2*10,(Math.random()-.5)*2*10]
@@ -30,10 +32,18 @@ class Circle{
 		this.x+=this.vec[0]
 		if(this.x>W || this.x<0){
 			this.vec[0]*=-1
+			this.x+=this.vec[0]
+			if(this.x>W || this.x<0){
+				this.remove()
+			}
 		}
 		this.y+=this.vec[1]
 		if(this.y>H || this.y<0){
 			this.vec[1]*=-1
+			this.y+=this.vec[1]
+			if(this.y>H || this.y<0){
+				this.remove()
+			}
 		}
 		this.vec[1]+=1
 
@@ -49,9 +59,15 @@ class Circle{
 		context.closePath()
 		context.fill()
 	}
+	remove(){
+		bulles.splice(this.pos,1)
+		for (var i = bulles.length - 1; i > this.pos; i--) {
+			bulles[i].pos--
+		}
+	}
 }
-let bulles=[new Circle(),new Circle()]
-bulles[0].draw()
+let bulles=[]
+let indexBul=0
 function Bloop() {
 	context.fillStyle="black"
 	context.fillRect(0,0,W,H)
