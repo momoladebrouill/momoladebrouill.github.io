@@ -8,6 +8,7 @@ canvas.height = H*ratio;
 canvas.style.width = W + "px";
 canvas.style.height = H + "px";
 context.scale(ratio,ratio);
+context.shadowBlur=50
 
 document.addEventListener("wheel",scroll,false);
 function scroll(e) {
@@ -39,6 +40,7 @@ class Circle{
 	}
 	draw(){
 		this.move()
+		context.shadowColor=this.color
 		context.fillStyle=this.color
 		context.beginPath()
 		context.arc(this.x,this.y,this.ray,0,2*Math.PI)
