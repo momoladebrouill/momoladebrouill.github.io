@@ -9,12 +9,13 @@ canvas.style.width = W + "px";
 canvas.style.height = H + "px";
 context.scale(ratio,ratio);
 context.shadowBlur=50
-
 document.addEventListener("wheel",scroll,false);
+context.fillStyle="black"
+context.fillRect(0,0,W,H)
 function scroll(e) {
 	let val=Math.sign(e.deltaY)
 	for (var i = bulles.length - 1; i >= 0; i--) {
-		bulles[i].vec[1]-=val
+		bulles[i].vec[1]-=val*10
 	}
 	bulles.push(new Circle(indexBul))
 	indexBul++
@@ -35,6 +36,8 @@ class Circle{
 			this.x+=this.vec[0]
 			if(this.x>W || this.x<0){
 				this.remove()
+			}else{
+				this.vec[0]*=0.9
 			}
 		}
 		this.y+=this.vec[1]
@@ -43,9 +46,11 @@ class Circle{
 			this.y+=this.vec[1]
 			if(this.y>H || this.y<0){
 				this.remove()
+			}else{
+				this.vec[1]*=0.9
 			}
 		}
-		this.vec[1]+=1
+		this.vec[1]+=this.ray/25
 
 	}
 	draw(){
@@ -68,6 +73,9 @@ class Circle{
 }
 let bulles=[]
 let indexBul=0
+for (var i =0; i <10; i++) {
+	bulles.push(new Circle(i))
+}
 function Bloop() {
 	context.fillStyle="black"
 	context.fillRect(0,0,W,H)

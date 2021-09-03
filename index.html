@@ -3,25 +3,28 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="icon" href="img/reggae.svg">
+	<link rel="stylesheet" href="styles.css">
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Poppins">
 	<link href="https://fonts.googleapis.com/css2?family=Besley&display=swap" rel="stylesheet">
+	<script type="text/javascript">
+		document.cookie=null
+	</script>
 	<title>momoladebrouill</title>
 
 </head>
 <body>
 	
 	<div id="chapters">
-		Chapitres<br>
-		<a href="#titre">Momoladebrouill</a><br>
-		<a href="#1">Un peu d'animation</a><br>
-		<a href="#2">Un peu de moi</a><br>
-		<a href="#3">Beaucoup de moi</a><br>
-		<a href="#4">Mon best of YouTube</a><br>
-		<a href="#5">Me contacter</a><br>
+		<a href="#titre">Momoladebrouill</a>
+		<a href="#1">Un peu d'animation</a>
+		<a href="#2">Un peu de moi</a>
+		<a href="#3">Beaucoup de moi</a>
+		<a href="#4">Mon best of YouTube</a>
+		<a href="#5">Me contacter</a>
 	</div>
 	<canvas id="can"></canvas>
 	<script type="text/javascript" src="waves.js"></script>
@@ -145,6 +148,8 @@
 		src="https://www.youtube.com/embed/videoseries?list=PLMBMrc1B8KWPUx8FQhIqqXN_E2BeLk1f7" 
 		title="HIHIHIIIII" 
 		frameborder="0" 
+		color="white"
+		modestbranding="1"
 		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
 		allowfullscreen
 	>
@@ -171,14 +176,16 @@
 	
 	<br>
 	<script type="text/javascript">
+		let text=""
 		for (var i = 0; i <50; i++) {
-			document.write("<br>")
+			text+="<br>"
 			if(Math.random()>0.7){
-				document.write('<br><a href="https://www.youtube.com/watch?v=vLzBeJUuoMc">test</a>')
+				text+='<br><a href="https://www.youtube.com/watch?v=vLzBeJUuoMc">test</a>'
 			}else if (Math.random()>.9) {
-				document.write('<a href=".">EN COURS DE TRAVEAUX</a>')
+				text+='<a href=".">EN COURS DE TRAVEAUX</a>'
 			}
 		}
+		document.write(text)
 	</script>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

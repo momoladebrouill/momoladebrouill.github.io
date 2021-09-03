@@ -28,16 +28,18 @@ canvas{
 }
 
 #chapters{
-	width: 20vw;
-	height: 20vw;
+	width: 100%;
+	height: 30px;
 	position: fixed;
 	font-size: 0pt;
 	transition: height 1s, width 1s, font-size 1s,background-color 1s;
 }
 #chapters:hover{
-	background-color: orangered;
-	height: 90%;
-	font-size: 15pt;
+	background-color: rgba(255,255,255, 0.7);
+	font-size: 20px;
+}
+#chapters:after{
+	width: fit-content;
 }
 h1,h2 {
 	font-family: Besley,serif;
@@ -84,6 +86,11 @@ a{
 	color: white;
 	overflow-y: auto;
 	scroll-behavior:smooth;
+	SameSite: Strict;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
 }
 .muchito{
 	transition: background-color 1s;
@@ -115,7 +122,10 @@ purplePD {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-iframe{aspect-ratio: 16/9}
+iframe{
+	aspect-ratio: 16/9;
+	SameSite: Strict;
+}
 #doissier{
 	height: 100vh;
 	width: auto;
