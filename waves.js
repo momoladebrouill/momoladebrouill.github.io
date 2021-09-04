@@ -14,11 +14,17 @@ context.fillStyle="black"
 context.fillRect(0,0,W,H)
 function scroll(e) {
 	let val=Math.sign(e.deltaY)
-	for (var i = bulles.length - 1; i >= 0; i--) {
+	/*for (var i = bulles.length - 1; i >= 0; i--) {
 		bulles[i].vec[1]-=val*10
 	}
-	bulles.push(new Circle(indexBul))
-	indexBul++
+	indexBul++*/
+	if(val>0){
+		bulles.push(new Circle(indexBul))
+	}else{
+		bulles.shift()
+	}
+	
+	
 }
 class Circle{
 	constructor(ind){
