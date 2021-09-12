@@ -14,7 +14,7 @@ class Missile{
 		this.angle=Math.random()*TAU;
 		this.x=(Math.cos(this.angle)+1)*W/2
 		this.y=(Math.sin(this.angle)+1)*H/2
-		this.vec=[(W/2-this.x)/100,(H/2-this.y)/100]
+		this.vec=[(W/2-this.x)/300,(H/2-this.y)/300]
 		this.val=parseInt(Math.random()*level)/level*360
 	}
 	draw(){
@@ -39,7 +39,7 @@ class Missile{
 		this.y+=this.vec[1]*speed;
 	}
 	landedon(){
-		let ang=Math.atan2(-H/2+this.y,this.x-W/2)-angle%TAU
+		let ang=Math.atan2(this.y-H/2,this.x-W/2)-angle%TAU
 		if(ang<0){ang+=TAU}
 		return parseInt(ang/TAU*level)/level*360
 	}
@@ -76,6 +76,8 @@ document.addEventListener("keydown", keydown, false);
 document.addEventListener("keyup", keyup, false);
 
 myAudio = new Audio('The_down.mp3'); 
+chlevel= new Audio('ting.mp3')
+error=new Audio('tong.mp3')
 if (typeof myAudio.loop == 'boolean')
 {
     myAudio.loop = true;
@@ -110,6 +112,7 @@ function bLoop() {
 				score++
 			}else{
 				score--
+				error.play()
 				if(score<0){score=0}
 			}
 		}
@@ -118,6 +121,7 @@ function bLoop() {
 	armada=[...nextarmada]
 	if(parseInt(score/10)+2!=level){
 		armada=[]
+		chlevel.play()
 		level=parseInt(score/10)+2
 		angle=0
 	}
