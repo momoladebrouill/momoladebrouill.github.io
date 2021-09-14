@@ -7,34 +7,61 @@
                 display:block;
                 position: static;
             }
-            html,body{
+        html,body{
                 margin:0px;
-                background-color: black;
+                background-color:black ;
             }
-        #score,#titre{
-        	font-size: 25px;
-        	font-family: cursive;
+        div{
         	position: absolute;
-        	height: 0px;
+        	height: 100vh;
         	width: 100%;
         	text-align: center;
+        	visibility: visible;
+        	transition: visibility 1s;
+        }
+        p{
+        	font-size: 25px;
+        	font-family: cursive;
+    		z-index: -1;
         	color: white;
         }
+        lottie-player{
+        	position: absolute;
+        	z-index: 0;
+        }
         #titre{
-        	font-size: 50px;
+        	font-size: 100px;
+        	font-family: cursive;
         	line-height: 33vh ;
         	text-align: center;
-        	visibility: visible;
-        	transition: visibility .5s;
-        	vertical-align: center;
+        	color: white;
+        	font-weight: bolder;
+     
+        }
+        #score{
+        	position: absolute;
+        	width: 100%;
+        	line-height: 90vh;
         }
 	</style>
 	<title>tests</title>
 </head>
 
 <body>
-	<p id="score">Musique par <a href="https://soundcloud.com/ruben-erman" target="erwan">The jeuuj_cola</a></p>
-	<p id="titre">The trigonomisator<br>faites tourner le disque pour aligner avec les couleurs <br>appuyez sur une touche pour commencer</p>
+	<div id="div">
+		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+			<lottie-player src="https://assets1.lottiefiles.com/packages/lf20_8N5XeH.json"  background="transparent"  speed="
+			.5" hover autoplay></lottie-player>
+		<p>Musique par <a href="https://soundcloud.com/ruben-erman" target="erwan">The jeuuj_cola</a></p>
+		
+		<p>faites tourner le disque pour aligner avec les couleurs</p>
+		<p>appuyez sur une touche pour commencer</p>
+		<p id="titre">
+			The trigonomisator
+			
+		</p>
+	</div>
+	<p id="score"></p>
 	<canvas id="game"></canvas>
 	<script src="alphabet.js"></script>
        

@@ -19,15 +19,15 @@ class Missile{
 	}
 	draw(){
 		this.move()
+		context.fillStyle="hsl("+this.val+",100%,50%)";
 		if(this.val!=this.landedon()){
-			context.beginPath();
-			context.fillStyle="white";
-			context.arc(this.x,this.y,11,0,TAU);
-			context.fill();
-			context.closePath();
+			context.shadowBlur=15
+			context.shadowColor=context.fillStyle
+		}else{
+			context.shadowBlur=0
 		}
 		context.beginPath();
-		context.fillStyle="hsl("+this.val+",100%,50%)";
+		
 		context.arc(this.x,this.y,10,0,TAU);
 		context.fill();
 		context.closePath();
@@ -52,7 +52,7 @@ function keydown(e){
 	if(Object.keys(dict).length === 0){
 		dict["runnig"]=true;
 		myAudio.play();
-		document.getElementById('titre').style.visibility="hidden"
+		document.getElementById('div').style.visibility="hidden"
 		bLoop()
 	}else{
 		dict[e.keyCode]=true;
@@ -127,20 +127,21 @@ function bLoop() {
 	}
 	fakeangle+=(angle-fakeangle)/7
 	for (let i = 0; i <= level; i++) {
+		context.shadowBlur=0
 		context.beginPath()
 		
-		context.shadowBlur=15
+		
 		context.moveTo(W/2,H/2)
 
 		context.fillStyle="hsl("+i/level*360+",100%,50%)"
-		context.shadowColor=context.fillStyle
+		
 		context.arc(W/2,H/2,100,i/level*TAU+fakeangle,(i+1)/level*TAU+fakeangle);
 		context.fill()
 		//let k=(i+0.5)/level*TAU+fakeangle
 		//context.fillStyle="white"
 		//context.fillText(i/level*360,W/2+Math.cos(k)*150,H/2+Math.sin(k)*150)
 		context.closePath()
-		context.shadowBlur=0
+		
 	}
 	score_dr.textContent=score
 	for(elem in dict){
