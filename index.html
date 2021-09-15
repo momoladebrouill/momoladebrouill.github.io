@@ -47,6 +47,7 @@
 		Actuellement en <a href="crispy.html">adolescence</a> assez marquée
 		par un manque d'énergie constant (principalement du aux fortes chaleures locales), je suis un fan de Hugh grant et j'élève en même temps pookie (v7.0)
 		et <a href="https://www.instagram.com/roger_le_lego/">Roger le Lego</a>.
+
 		Je suis aussi un des GRANDS gagnant du trophée de l'humour hehe (JTM <a href="https://www.instagram.com/humourman.officiel/">HumourMan</a>)<br>
 		<em>Je garde dans ma forteresse le carcapass btw</em><br>
 		<br>
@@ -79,11 +80,18 @@
 			"Si un bar te passes en haut, on peut dire que le Bartolomeo !",
 			"Florian, il aime ses couilles, pourtant il n'est pas PD",
 			"On peut mettre des classes dans une liste et des listes dans des classes",
-			"Relate à balle"
+			"Relate à balle",
+			"",
+			'BUG BUG BUG BUG BUG "Madame ça bug"',
+			"La liberté commence où l'ignorance finit ~ Seigneur Muselier(sous couverture d'un panel de lycéens)"
 			]
 			span=document.getElementById('fromage')
 			bouton=document.getElementById('autre')
+			zic=new Audio('https://static.bodet-time.com/mp3/Melodie-P-Carillon-fin.mp3')
 			function fromager() {
+				zic.pause();
+				zic.currentTime = 0;
+				zic.play()
 				index=parseInt(Math.random()*mots.length)
 				span.textContent=mots[index]
 				mots.splice(index,1)
