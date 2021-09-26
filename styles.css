@@ -1,165 +1,202 @@
-html{
-	align-content: center;
+html {
+    align-content: center;
 }
-body{
-	width: 100%;
-	background-color: black;
-	color: whitesmoke;
-	font-family: Poppins;
-	position: absolute;
-	/*Pour la barre de défillement*/
-	text-align-last: center;
-	overflow: scroll;
-	-ms-overflow-style: none;
-  	scrollbar-width: none;  
-  	font-size: 50px;
+
+body {
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    font-family: Poppins;
+    position: absolute;
+    /*Pour la barre de défillement*/
+    text-align-last: center;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    font-size: 50px;
 }
-p{
-	margin: 50px;
+
+p {
+    margin: 50px;
 }
+
 body::-webkit-scrollbar {
     display: none;
 }
-canvas{
-	left: 0;
-	position: fixed;
-	background-color: red;
-	z-index: -1;
+
+canvas {
+    left: 0;
+    position: fixed;
+    background-color: red;
+    z-index: -1;
 }
-#menu{
-	position: fixed;
+
+#menu {
+    position: fixed;
 }
-svg{
-	position: absolute;
-	transition: transform 1s;
-	stroke:white;
+
+svg {
+    position: absolute;
+    transition: transform 1s;
+    stroke: white;
 }
-line{
-	stroke-width:2;
+
+line {
+    stroke-width: 2;
 }
-svg:hover{
-	stroke: black;
-	transform: rotateY(90deg);
+
+svg:hover {
+    stroke: black;
+    transform: rotateY(90deg);
 }
-#menu:hover #chapters{
-	visibility: visible;
-	opacity: 1;
+
+#menu:hover #chapters {
+    visibility: visible;
+    opacity: 1;
 }
-#chapters{
-	visibility: hidden;
-	opacity: 0;
-	transition: visibility 1s,opacity 0.5s linear;
-	width: 100%;
-	position: fixed;
-	background-color: red;
-	font-size: 20px;
-	padding: 10px;
+
+#chapters {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 0.5s linear;
+    width: 100%;
+    position: fixed;
+    background-color: red;
+    font-size: 20px;
+    padding: 10px;
 }
-.chap,svg{
-	margin: 10px;
+
+.chap,
+svg {
+    margin: 10px;
 }
-h1,h2 {
-	font-family: Besley,serif;
-	vertical-align: center;
-	line-height: 100vh;
-    display: block;
-	width: 100%;
-	height: 100vh;
-    display: block;
+
+h1,
+h2 {
+    font-family: Besley, serif;
+    vertical-align: center;
+    line-height: 100vh;
+    width: 100%;
+    height: 100vh;
     position: static;
     margin: auto;
     color: white;
     transition: color 1s;
     font-size: 100px;
 }
-#pocodemomo,p{
-	/*margin-left: 10vw;
+
+#pocodemomo,
+p {
+    /*margin-left: 10vw;
 	margin-right: 10vw;*/
-	padding: 10vw;
-	border-radius: 100px;
-	background-color: rgba(0, 0, 0, 0.9);
-}
-h2:hover{
-	color: whitesmoke;
-}
-#autre{
-	color: inherit;
-	font-family: inherit;
-	border-radius: inherit;
-	font-size: 25px;
-	padding: 10px;
-	background-color: red;
-	border-color: indianred;
-}
-#pocodemomo,#muchodemomo{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-}
-#contactarme{
-	display: grid;
-	grid-template-columns: 1fr 1fr ;
-}
-.grid-child{
-	padding: 20px;
-}
-.ico{
-	height: 200px;
-}
-.muchito{
-	padding: 50px;
-	border-radius: 50px;
+    padding: 10vw;
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
-#fond{
-	width: 400px;
+h2:hover {
+    color: whitesmoke;
 }
-a{
-	color: white;
-	overflow-y: auto;
-	scroll-behavior:smooth;
+
+#autre {
+    color: inherit;
+    font-family: inherit;
+    border-radius: inherit;
+    font-size: 25px;
+    padding: 10px;
+    background-color: red;
+    border-color: indianred;
+}
+
+#pocodemomo,
+#muchodemomo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#contactarme {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-child {
+    padding: 20px;
+}
+
+.ico {
+    height: 200px;
+}
+
+.muchito {
+    padding: 50px;
+    border-radius: 50px;
+}
+
+#fond {
+    width: 400px;
+}
+
+a {
+    color: white;
+    overflow-y: auto;
+    scroll-behavior: smooth;
     overflow-y: fixed;
-	text-decoration: none;
-}
-a:hover{
-	text-decoration: underline;
-}
-.muchito{
-	transition: background-color 1s;
-}
-#insta{
-	box-shadow: inset 500px 500px black;
-	transition: box-shadow 1s;
-}
-#insta:hover{
-	box-shadow: inset 500px 500px rgba(0, 0, 0, 0);
-	background: linear-gradient(45deg,orange,red,purple);
+    text-decoration: none;
 }
 
-#github:hover{
-	background-color: rgba(255,0,255,0.5);
+a:hover {
+    text-decoration: underline;
 }
-#spotify:hover{
-	background-color: limegreen;
+
+.muchito {
+    transition: background-color 1s;
 }
-#discord:hover{
-	background-color:  #7289DA;
+
+#insta {
+    box-shadow: inset 500px 500px black;
+    transition: box-shadow 1s;
 }
-#mail:hover{
-	background-color: red;
+
+#insta:hover {
+    box-shadow: inset 500px 500px rgba(0, 0, 0, 0);
+    background: linear-gradient(45deg, orange, red, purple);
 }
+
+#github:hover {
+    background-color: rgba(255, 0, 255, 0.5);
+}
+
+#spotify:hover {
+    background-color: limegreen;
+}
+
+#discord:hover {
+    background-color: #7289DA;
+}
+
+#mail:hover {
+    background-color: red;
+}
+
 purplePD {
-	font-weight: bolder;
-    background: -webkit-linear-gradient(45deg,purple,blue);
+    font-weight: bolder;
+    background: -webkit-linear-gradient(45deg, purple, blue);
+    background-clip: inherit;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-iframe{
-    display:block;
-	aspect-ratio: 16/9;
-	SameSite: Strict;
+
+iframe {
+    aspect-ratio: 16/9;
 }
-#doissier{
-	height: 100vh;
-	width: auto;
+
+#doissier {
+    height: 100vh;
+    width: auto;
+}
+
+.icon {
+    fill: white;
+    border: #7289DA;
 }

@@ -1,216 +1,211 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="styles.css">
-	<link rel="icon" href="img/reggae.svg">
-	
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Poppins">
-	<link href="https://fonts.googleapis.com/css2?family=Besley&display=swap" rel="stylesheet">
-	<script type="text/javascript">
-		document.cookie=null
-	</script>
-	<title>momoladebrouill</title>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/reggae.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link href="https://fonts.googleapis.com/css2?family=Besley&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+        document.cookie = null
+    </script>
+    <title>momoladebrouill</title>
 
 </head>
+
 <body>
-	<div id="menu">
-		<div id="chapters">
-			<a href="#titre" class="chap">Momoladebrouill</a>
-			<a href="#1" class="chap">Un peu d'animation</a>
-			<a href="#2" class="chap">Un peu de moi</a>
-			<a href="#3" class="chap">Beaucoup de moi</a>
-			<a href="#4" class="chap">Mon best of YouTube</a>
-			<a href="#5" class="chap">Me contacter</a>
-			<button onclick="var linkNode = document.getElementsByTagName('link')[0];
+    <div id="menu">
+        <div id="chapters">
+            <a href="#titre" class="chap">Momoladebrouill</a>
+            <a href="#1" class="chap">Un peu d'animation</a>
+            <a href="#2" class="chap">Un peu de moi</a>
+            <a href="#3" class="chap">Beaucoup de moi</a>
+            <a href="#4" class="chap">Mon best of YouTube</a>
+            <a href="#5" class="chap">Me contacter</a>
+            <button onclick="var linkNode = document.getElementsByTagName('link')[0];
 								linkNode.parentNode.removeChild(linkNode);" class="chap"> texte plat (hihi)</button>
-			<button onclick="bulles=[]" class="chap"> faire sauter les balles</button>
-		</div>
-		<svg  width="30" height="30" viewBox="0 0 30 30">
-	  		<line x1="0" y1="10%" x2="100%" y2="10%" />
-	  		<line x1="0" y1="50%" x2="100%" y2="50%" />
-	  		<line x1="0" y1="90%" x2="100%" y2="90%" />
+            <button onclick="bulles=[]" class="chap"> faire sauter les balles</button>
+        </div>
+        <svg width="30" height="30" viewBox="0 0 30 30">
+			<line x1="0" y1="10%" x2="100%" y2="10%" />
+			<line x1="0" y1="50%" x2="100%" y2="50%" />
+			<line x1="0" y1="90%" x2="100%" y2="90%" />
 		</svg>
-	</div>
-	<canvas id="can"></canvas>
-	<script type="text/javascript" src="waves.js"></script>
-	<h1 id="titre">Momoladebrouill</h1>	
-	<p>
-		<a href="https://youtu.be/bkiFH9k8Kek">Belle journée à vous</a>, <br>
-		Je suis le capitaine <a href="https://www.youtube.com/watch?v=KS-fBZWeqnk">µ</a>, en charge de la garde du grand 
-		<a href="img/acc.jpg">Abdel Couscous</a>
-		à plein temps.
-		Actuellement en <a href="crispy.html">adolescence</a> assez marquée
-		par un manque d'énergie constant (principalement du aux fortes chaleures locales), je suis un fan de Hugh grant et j'élève en même temps pookie (v7.0)
-		et <a href="https://www.instagram.com/roger_le_lego/">Roger le Lego</a>.
+    </div>
+    <canvas id="can"></canvas>
+    <script type="text/javascript" src="waves.js"></script>
+    <h1 id="titre">Momoladebrouill</h1>
+    <p>
+        <a href="https://youtu.be/bkiFH9k8Kek">Belle journée à vous</a>, <br> Je suis le capitaine <a href="https://www.youtube.com/watch?v=KS-fBZWeqnk">µ</a>, en charge de la garde du grand
+        <a href="img/acc.jpg">Abdel Couscous</a> à plein temps. Actuellement en <a href="crispy.html">adolescence</a> assez marquée par un manque d'énergie constant (principalement du aux fortes chaleures locales), je suis un fan de Hugh grant et j'élève
+        en même temps pookie (v7.0) et <a href="https://www.instagram.com/roger_le_lego/">Roger le Lego</a>. Je suis aussi un des GRANDS gagnant du trophée de l'humour hehe (JTM <a href="https://www.instagram.com/humourman.officiel/">HumourMan</a>)<br>
+        <em>Je garde dans ma forteresse le carcapass btw</em><br>
+    </p>
+    <p>
+        <br> Votre phrase personalisée:<br>
+        <span id="fromage"> </span><br>
+        <button onclick="fromager()" id="autre">Un autre !</button>
+        <script type="text/javascript">
+            let mots = [
+                "le masque c'est sur le nez !",
+                "Non.",
+                "Les nouilles crues ne se mangent pas",
+                "Une phrase c'est sujet verbe complément",
+                "(a+b)²=a²+2ab+b²",
+                "Si ton tonton tond ton tonton, ton tonton tondu sera",
+                "César est mort",
+                "Paul se pèle au pôle dans sa pile de pulls et de polos pales",
+                "La clim' d'humour man qui fait des rollers",
+                "Attention à la mousse!",
+                "Il y'a vingt six lettres dans l'alphabet pourtant dans cette phrase il y'en a que 24 différentes",
+                " 2b || !2b telle est la question",
+                " Paul est mort RIP Paul",
+                "Humour, toujours",
+                "Chacule pom polom pom",
+                "zabolomock",
+                "J E A N",
+                "Oui.",
+                "Mais en vrai la nature sah ~ Florian Muratore",
+                "Bonum vinium la edificat cor hominis *danse élégante*",
+                "L'amour c'est comme les pets, si tu dois forcer c'est certainement du caca",
+                "Si un bar te passes en haut, on peut dire que le Bartolomeo !",
+                "Florian, il aime ses couilles, pourtant il n'est pas PD",
+                "On peut mettre des classes dans une liste et des listes dans des classes",
+                "Relate à balle",
+                "",
+                'BUG BUG BUG BUG BUG "Madame ça bug"',
+                "La liberté commence où l'ignorance finit ~ Seigneur Muselier(sous couverture d'un panel de lycéens)",
+                "Hypo et tata yeah ! Hypo et tata yeaaah. Hypo et touki touki hypo et touki touki yeaaa!",
+                "Dans la foret d'Amazonie y a un arbre qui s'appelle l'Hévéa et qui sert a fabriquer le caoutchouc Ducoup quand tu achète un pneu au final tu paie la D'hévéa"
+            ]
+            span = document.getElementById('fromage')
+            bouton = document.getElementById('autre')
+            zic = new Audio('https://static.bodet-time.com/mp3/Melodie-P-Carillon-fin.mp3')
 
-		Je suis aussi un des GRANDS gagnant du trophée de l'humour hehe (JTM <a href="https://www.instagram.com/humourman.officiel/">HumourMan</a>)<br>
-		<em>Je garde dans ma forteresse le carcapass btw</em><br>
-		<br>
-		Votre phrase personalisée:<br>
-		<span id="fromage"> </span><br>
-		<button onclick="fromager()" id="autre">Un autre !</button>
-		<script type="text/javascript">
-			let mots=[
-			"le masque c'est sur le nez !",
-			"Non.",
-			"Les nouilles crues ne se mangent pas",
-			"Une phrase c'est sujet verbe complément",
-			"(a+b)²=a²+2ab+b²",
-			"Si ton tonton tond ton tonton, ton tonton tondu sera",
-			"César est mort",
-			"Paul se pèle au pôle dans sa pile de pulls et de polos pales",
-			"La clim' d'humour man qui fait des rollers",
-			"Attention à la mousse!",
-			"Il y'a vingt six lettres dans l'alphabet pourtant dans cette phrase il y'en a que 24 différentes",
-			" 2b || !2b telle est la question",
-			" Paul est mort RIP Paul",
-			"Humour, toujours",
-			"Chacule pom polom pom",
-			"zabolomock",
-			"J E A N",
-			"Oui.",
-			"Mais en vrai la nature sah ~ Florian Muratore",
-			"Bonum vinium la edificat cor hominis *danse élégante*",
-			"L'amour c'est comme les pets, si tu dois forcer c'est certainement du caca",
-			"Si un bar te passes en haut, on peut dire que le Bartolomeo !",
-			"Florian, il aime ses couilles, pourtant il n'est pas PD",
-			"On peut mettre des classes dans une liste et des listes dans des classes",
-			"Relate à balle",
-			"",
-			'BUG BUG BUG BUG BUG "Madame ça bug"',
-			"La liberté commence où l'ignorance finit ~ Seigneur Muselier(sous couverture d'un panel de lycéens)"
-			]
-			span=document.getElementById('fromage')
-			bouton=document.getElementById('autre')
-			zic=new Audio('https://static.bodet-time.com/mp3/Melodie-P-Carillon-fin.mp3')
-			function fromager() {
-				zic.pause();
-				zic.currentTime = 0;
-				zic.play()
-				index=parseInt(Math.random()*mots.length)
-				span.textContent=mots[index]
-				mots.splice(index,1)
-				bouton.textContent="Une autre ! (plus que "+mots.length+")"
-				if(mots.length==0){
-					span.textContent="VOUS AVEZ TOUT VU AAAH"
-					bouton.style.display="none"
-				}
-			}
-			fromager()
-		</script>
-	</p>
+            function fromager() {
+                zic.pause();
+                zic.currentTime = 0;
+                zic.play()
+                index = parseInt(Math.random() * mots.length)
+                span.textContent = mots[index]
+                mots.splice(index, 1)
+                bouton.textContent = "Une autre ! (plus que " + mots.length + ")"
+                if (mots.length == 0) {
+                    span.textContent = "VOUS AVEZ TOUT VU AAAH"
+                    bouton.style.display = "none"
+                }
+            }
+            fromager()
+        </script>
+    </p>
 
-	<h2 id="1">Un peu d'animations</h2>
-	<p>
-		<a href="fontaine/index.html">Des fontaines magiques !</a><br>
-		<a href="graffeur/index.html">Des graffitis à la folie !</a><br>
-		<a href="artist/index.html">Des pixel arts magnifiques !</a><br>
-		<a href="the trigo/index.html">Un jeu avec une ambiance de dingue !</a><br>
-		Merci à <purplePD>Thomas big T</purplePD> pour m'avoir aidé et ainsi me montrer le pouvoir du JavaScripting
-	</p>
+    <h2 id="1">Un peu d'animations</h2>
+    <p>
+        <a href="fontaine/index.html">Des fontaines magiques !</a><br>
+        <a href="graffeur/index.html">Des graffitis à la folie !</a><br>
+        <a href="artist/index.html">Des pixel arts magnifiques !</a><br>
+        <a href="the trigo/index.html">Un jeu avec une ambiance de dingue !</a><br> Merci à
+        <purplePD>Thomas big T</purplePD> pour m'avoir aidé et ainsi me montrer le pouvoir du JavaScripting
+    </p>
 
-	<h2 id="2">Un peu de moi </h2>
-		Cliquez sur le titre pour accèder au contenu 
-		<div id="pocodemomo">
-			<a href="stories/index.html" target="_WHITE">
-				Les histoires de momo<br>
-				<iframe src="stories/index.html" width="100%"></iframe>
+    <h2 id="2">Un peu de moi </h2>
+    Cliquez sur le titre pour accèder au contenu
+    <div id="pocodemomo">
+        <a href="stories/index.html" target="_WHITE">
+			Les histoires de momo<br>
+			<iframe src="stories/index.html" width="100%"></iframe>
 			<a href="favs/favri.html">
 				Mes decouvertes du net<br>
 				<iframe src="favs/favri.html" width="100%"></iframe>
 			</a>
 
-			<a id="maison" href="https://photos.google.com/share/AF1QipPooyzxa6Ev8KH6i6meFavhKCNvLpDMETlsLwbrc5uHZ5843bmszqpqmDnUtsIWnw?key=MGNtUE5sbU02Smw3enJRZDhTZnRzc1p4MExDRWhR" target="rrrrrrr">
+        <a id="maison" href="https://photos.google.com/share/AF1QipPooyzxa6Ev8KH6i6meFavhKCNvLpDMETlsLwbrc5uHZ5843bmszqpqmDnUtsIWnw?key=MGNtUE5sbU02Smw3enJRZDhTZnRzc1p4MExDRWhR" target="rrrrrrr">
 				Mes oeuvres d'art<br>
 				<img id="fond" src="img/fond.png">
 			</a>
-			<a href="https://youtu.be/Rs_gbT3R_WI" target="HIHIHIIIII">
+        <a href="https://youtu.be/Rs_gbT3R_WI" target="HIHIHIIIII">
 				Chataigne<br>
-				<iframe width="560" src="https://www.youtube.com/embed/Rs_gbT3R_WI?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="560" src="https://www.youtube.com/embed/Rs_gbT3R_WI?controls=0"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
 			</a>
-			<a href="https://www.youtube.com/watch?v=kt1nzOeq4Xs" target="hohohohoh">
+        <a href="https://www.youtube.com/watch?v=kt1nzOeq4Xs" target="hohohohoh">
 				Chataigne 2<br>
-				<iframe width="560"  src="https://www.youtube.com/embed/kt1nzOeq4Xs?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="560" src="https://www.youtube.com/embed/kt1nzOeq4Xs?controls=0"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
 			</a>
-			<a href="https://www.youtube.com/channel/UCKTaV9wVtG0Kq6OvIY-Q52w" target="zabbi">
+        <a href="https://www.youtube.com/channel/UCKTaV9wVtG0Kq6OvIY-Q52w" target="zabbi">
 				Ma chaine Youtube OUSINON<br>
-				<img src="https://lh3.googleusercontent.com/a-/AOh14GhTrywQLpGfdKFHn0tQa1j-1yfD4NwgG7rnpb031V8=s600-k-no-rp-mo"  height="400">
+				<img src="https://lh3.googleusercontent.com/a-/AOh14GhTrywQLpGfdKFHn0tQa1j-1yfD4NwgG7rnpb031V8=s600-k-no-rp-mo"
+					height="400">
 			</a>
-		</div>
+    </div>
 
-	<h2 id="3">Beaucoup de moi </h2>
-	<div id="muchodemomo">
-		<a href="https://github.com/momoladebrouill" target="a" class="muchito" id="github">
-			<img class="ico" src="img/github.svg"><br>
-			mes pythonneries
-		</a>
+    <h2 id="3">Beaucoup de moi </h2>
+    <div id="muchodemomo">
+        <a href="https://github.com/momoladebrouill" target="a" class="muchito" id="github">
+            <img class="ico" src="img/github.svg"><br> mes pythonneries
+        </a>
 
-		<a href="https://www.instagram.com/momoladebrouill/" target="b" class="muchito" id="insta">
-			<img class="ico" src="img/instagram.svg"><br>
-			mes blagounettes
-		</a>
+        <a href="https://www.instagram.com/momoladebrouill/" target="b" class="muchito" id="insta">
+            <img class="ico" src="img/instagram.svg"><br> mes blagounettes
+        </a>
 
-		<a href="https://open.spotify.com/user/h0trspt55iaws655qxgv9r2hh?si=44ca0ebc51154686" target="d" class="muchito" id="spotify"> 
-			<img class="ico" src="img/spotify.svg"><br>
-			mes playlists von qualität
-		</a>
-	</div>
+        <a href="https://open.spotify.com/user/h0trspt55iaws655qxgv9r2hh?si=44ca0ebc51154686" target="d" class="muchito" id="spotify">
+            <img class="ico" src="img/spotify.svg"><br> mes playlists von qualität
+        </a>
+    </div>
 
-	<h2 id="4">Mon best of Y</h2>
-	<iframe id="doissier" 
-		src="https://www.youtube.com/embed/videoseries?list=PLMBMrc1B8KWPUx8FQhIqqXN_E2BeLk1f7" 
-		title="HIHIHIIIII" 
-		frameborder="0" 
-		color="white"
-		modestbranding="1"
-		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-		allowfullscreen></iframe>
+    <h2 id="4">Mon best of Y</h2>
+    <iframe id="doissier" src="https://www.youtube.com/embed/videoseries?list=PLMBMrc1B8KWPUx8FQhIqqXN_E2BeLk1f7" title="HIHIHIIIII" frameborder="0" color="white" modestbranding="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
 
-	<h2 id="5">Me contacter heheh</h2>
-	<div id="contactarme">
-		<a href="https://discordapp.com/users/8431/" target="c" id="discord" class="muchito">
-			<img class="ico" src="img/discord.svg" >
-		</a>
-		<a href="mailto:momoladebrouill@gmail.com" target="e" id="mail" class="muchito">
-			<img class="ico" src="img/mail.svg" >
-		</a>
-	</div>
+    <h2 id="5">Me contacter heheh</h2>
+    <div id="contactarme">
+        <a href="https://discordapp.com/users/8431/" target="c" id="discord" class="muchito">
+            <img class="ico" src="img/discord.svg">
+        </a>
+        <a href="mailto:momoladebrouill@gmail.com" target="e" id="mail" class="muchito">
+            <img class="ico" src="img/mail.svg">
+        </a>
+    </div>
 
-	<p>euhh ...<br>
-	avoue t'es <strong>JALOUX</strong> de mon site ! <br>
-	Amen<br>
-	<br>
-	<br>
-	Des logos pris depuis <a href="https://www.flaticon.com/" target="f">flaticon</a>
-	et la police de charctère je la dois à <a href="https://www.google.com/search?q=google">GOOGLE</a>
-	merci à eux</p>
+    <p>
+        euhh ...<br> avoue t'es <strong>JALOUX</strong> de mon site ! <br> Amen
+        <br>
+        <br>
+        <br> Des logos pris depuis <a href="https://www.flaticon.com/" target="f">flaticon</a> et la police de charctère je la dois à <a href="https://www.google.com/search?q=google">GOOGLE</a> merci à eux
+    </p>
 
-	<script type="text/javascript">
-		let text=""
-		for (var i = 0; i <50; i++) {
-			text+="<br>"
-			if(Math.random()>0.7){
-				text+='<br><a href="https://www.youtube.com/watch?v=vLzBeJUuoMc">test</a>'
-			}else if (Math.random()>.9) {
-				text+='<a href=".">EN COURS DE TRAVEAUX</a>'
-			}
-		}
-		document.write(text)
-	</script>
+    <script type="text/javascript">
+        let text = ""
+        for (var i = 0; i < 50; i++) {
+            text += "<br>"
+            if (Math.random() > 0.7) {
+                text += '<br><a href="https://www.youtube.com/watch?v=vLzBeJUuoMc">test</a>'
+            } else if (Math.random() > .9) {
+                text += '<a href=".">EN COURS DE TRAVEAUX</a>'
+            }
+        }
+        document.write(text)
+    </script>
 
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
 
-	<p>Vous êtes à l'étage <a href="https://www.google.fr/maps/@43.1402503,6.0094792,3a,60y,190.03h,81.57t/data=!3m6!1e1!3m4!1sYejobJ04NtgTcwEbxU5giQ!2e0!7i16384!8i8192!5m1!1e4" class="text" >-2</a> là ayou</p>
-	<script src="animations.js"></script>
+    <p>
+        Vous êtes à l'étage <a href="https://www.google.fr/maps/@43.1402503,6.0094792,3a,60y,190.03h,81.57t/data=!3m6!1e1!3m4!1sYejobJ04NtgTcwEbxU5giQ!2e0!7i16384!8i8192!5m1!1e4" class="text">
+			-2</a> là ayou
+    </p>
+    <script src="animations.js" type="text/javascript"></script>
 </body>
+
 </html>

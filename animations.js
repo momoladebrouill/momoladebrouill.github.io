@@ -1,6 +1,7 @@
-let huter=0
+var huter=0;
 const title=document.getElementById('titre')
-window.addEventListener('scroll',function(e) {
-    huter+=Math.sign(e.deltaY)*10
+window.addEventListener('wheel',wheel);
+function wheel(e) {
+    huter+=Math.sign(e.deltaY)*-1
     title.style.fontSize=huter+"px"
-});
+};
