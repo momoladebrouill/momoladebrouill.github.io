@@ -3,32 +3,41 @@ html {
 }
 
 body {
-    width: 100%;
+    width: 100vw;
     background-color: black;
     color: whitesmoke;
     font-family: Poppins;
     position: absolute;
+    font-size: 50px;
+
     /*Pour la barre de défillement*/
     text-align-last: center;
     overflow: scroll;
     -ms-overflow-style: none;
-    scrollbar-width: none;
-    font-size: 50px;
+    scrollbar-width: none;    
 }
-
-p {
-    margin: 50px;
-}
-
 body::-webkit-scrollbar {
     display: none;
 }
-
 canvas {
     left: 0;
+    width: 100vw;
     position: fixed;
-    background-color: red;
+    background-color: black;
     z-index: -1;
+}
+
+
+p {
+    margin: 50px;
+    align-content: center;
+}
+
+
+ul,li{
+    margin: 50px;
+    align-content: center;
+    text-align: center;
 }
 
 #menu {
@@ -126,6 +135,7 @@ h2:hover {
 
 .ico {
     height: 200px;
+    transition: transform 1s background-color 1s;
 }
 
 .muchito {
@@ -139,28 +149,22 @@ h2:hover {
 
 a {
     color: white;
-    overflow-y: auto;
-    scroll-behavior: smooth;
-    overflow-y: fixed;
     text-decoration: none;
+    transition: transform 1s;
 }
 
 a:hover {
     text-decoration: underline;
+    transform: scale(1.25);
 }
 
 .muchito {
-    transition: background-color 1s;
+    transition: background-color 1s transform 1s;
 }
 
-#insta {
-    box-shadow: inset 500px 500px black;
-    transition: box-shadow 1s;
-}
 
 #insta:hover {
-    box-shadow: inset 500px 500px rgba(0, 0, 0, 0);
-    background: linear-gradient(45deg, orange, red, purple);
+    background-color: orangered;
 }
 
 #github:hover {
@@ -187,16 +191,9 @@ purplePD {
     -webkit-text-fill-color: transparent;
 }
 
-iframe {
-    aspect-ratio: 16/9;
-}
+
 
 #doissier {
     height: 100vh;
     width: auto;
-}
-
-.icon {
-    fill: white;
-    border: #7289DA;
 }

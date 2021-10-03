@@ -1,20 +1,28 @@
 html{
 	-moz-box-shadow:    inset 0 0 50px #000000;
-   	-webkit-box-shadow: inset 0 0 50px #000000;
-   	box-shadow:         inset 0 0 50px #000000;
+  -webkit-box-shadow: inset 0 0 50px #000000;
+  box-shadow:         inset 0 0 50px #000000;
+  background-color: darkolivegreen;
 }
 
 body{
-	background-color: bisque;
-	font-family:Lucida Handwriting, cursive;
+	background-color: bisque ;
+	font-family: cursive;
 	font-size: 20pt;
+	position: absolute;
+  box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
+  margin: 100px;
+  padding: 10vw;
+
 }
+
 a{
 	text-decoration: none;
 	margin-top,margin-bottom: 50vw;
 	text-align: center;
 	color: darkred;
 }
+
 td{
 	border-radius: 25px;
 	transition: background-color 1s;
@@ -22,29 +30,16 @@ td{
 td:hover{
 	background-color: beige;
 }
-html{
-	background-color: darkred;
-}
-body{
-  position: absolute;
-  width: 75%;
-  /*min-height: calc((1vw + 1vh) * 75);
-  /* center page with absolute position */
-  top: 0%; left: 50%; transform: translate(-50%, 0);
-  margin: 2em 0;
-    padding: 4em;
-    box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
-    background: #fffef0;
-  filter: url(#wavy2);
-}
+
+
 h1{
 	color: black;
 	font-weight: bolder;
 	text-align: center;
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
-  	white-space: nowrap; /* Keeps the content on a single line */
+  white-space: nowrap; /* Keeps the content on a single line */
 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  	animation: typing 3.5s steps(40, end)
+  animation: typing 3.5s steps(40, end)
     	
 }
 @keyframes typing {
