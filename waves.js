@@ -9,7 +9,7 @@ canvas.style.width = W + "px";
 canvas.style.height = H + "px";
 context.scale(ratio,ratio);
 context.shadowBlur=50
-document.addEventListener("wheel",scroll,false);
+//document.addEventListener("wheel",scroll,false);
 context.fillStyle="black"
 context.fillRect(0,0,W,H)
 function scroll(e) {
@@ -57,15 +57,23 @@ class Circle{
 	}
 }
 let bulles=[]
-
-for (var i =0; i <10; i++) {
-	bulles.push(new Circle())
+function boom(){
+	for (var i =0; i <10; i++) {
+		bulles.push(new Circle())
+	}
 }
-function Bloop() {
+
+let time=0
+function Bloop(moment) {
 	context.fillStyle="black"
 	context.fillRect(0,0,W,H)
 	context.fillStyle="red"
 	context.fillText(10,10,"r")
+	time+=1/60
+	if(Math.round(time)==10){
+		time=0
+		boom()
+	}
 	for (var i = bulles.length - 1; i >= 0; i--) {
 		bulles[i].draw()
 	}
