@@ -2,16 +2,21 @@ html{
 	-moz-box-shadow:    inset 0 0 50px #000000;
   -webkit-box-shadow: inset 0 0 50px #000000;
   box-shadow:         inset 0 0 50px #000000;
-  background-color: darkolivegreen;
+  background-color: #BA8C63;
+
 }
 
 body{
 	background-color: bisque ;
 	font-family: cursive;
 	font-size: 20pt;
-	position: absolute;
   box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
-  margin: 100px;
+  max-width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+
   padding: 10vw;
 
 }
