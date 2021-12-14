@@ -2,3 +2,26 @@ body {
     color: white;
     background-color: black;
 }
+
+svg,
+img {
+    background-color: darkred;
+    max-width: 10vw;
+    border-radius: 10px;
+}
+
+line {
+    stroke: black;
+}
+
+a {
+    color: orangered;
+}
+
+a:visited {
+    color: darkred;
+}
+
+a:hover {
+    color: red;
+}
