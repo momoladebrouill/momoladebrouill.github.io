@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div id="menu" style="background-color: black;">
+    <div id="menu">
         <div id="chapters">
             <a href="#titre" class="chap">Momoladebrouill</a>
             <a href="#1" class="chap">Un peu d'animation</a>
@@ -21,9 +21,9 @@
             <a href="#3" class="chap">Beaucoup de moi</a>
             <a href="#4" class="chap">Mon best of YouTube</a>
             <a href="#5" class="chap">Me contacter</a>
-            <button onclick="var linkNode = document.getElementsByTagName('link')[0];
+            <!--button onclick="var linkNode = document.getElementsByTagName('link')[0];
 								linkNode.parentNode.removeChild(linkNode);" class="magie"> texte plat (hihi)</button>
-            <button onclick="bulles=[]" class="magie"> faire sauter les balles</button>
+            <button onclick="bulles=[]" class="magie"> faire sauter les balles</button-->
         </div>
         <svg width="30" height="30" viewBox="0 0 30 30">
 			<line x1="0" y1="10%" x2="100%" y2="10%" />
@@ -32,9 +32,8 @@
 		</svg>
     </div>
 
-    <canvas id="can"></canvas>
-
-    <script type="text/javascript" src="waves.js"></script>
+    <!--canvas id="can"></canvas-->
+    <!--script type="text/javascript" src="waves.js"></script-->
     <h1 id="titre">Momoladebrouill</h1>
 
     <p>
@@ -82,7 +81,9 @@
                 "Dans la foret d'Amazonie y a un arbre qui s'appelle l'Hévéa et qui sert a fabriquer le caoutchouc Ducoup quand tu achète un pneu au final tu paie la D'hévéa",
                 "Dans le monde des fous le borgne n'as plus qu'un œil ~ Dicton STI",
                 "Pour vous, une OlarriQuote : Arthur Plee vous êtes une Plaie",
-                "Depuis que j'ai appris que l'humanité entière est peut être bâti sur un mensonge, je me prend toutes les chaises ~ Spé HGGSP quote"
+                "Depuis que j'ai appris que l'humanité entière est peut être bâti sur un mensonge, je me prend toutes les chaises ~ Spé HGGSP quote",
+                "Pas besoin de venir en BG quand on l'est"
+
             ]
             span = document.getElementById('fromage')
             bouton = document.getElementById('autre')
@@ -120,19 +121,19 @@
     Cliquez sur le titre pour accèder au contenu
     <div id="pocodemomo">
         <a href="stories/index.html" target="_WHITE">Coin du feu</a>
-        <iframe src="stories/index.html"></iframe>
+
 
         <a href="favs/favri.html">Surf sur le net</a>
-        <iframe src="favs/favri.html"></iframe>
+
 
 
         <a id="maison" href="https://photos.google.com/share/AF1QipPooyzxa6Ev8KH6i6meFavhKCNvLpDMETlsLwbrc5uHZ5843bmszqpqmDnUtsIWnw?key=MGNtUE5sbU02Smw3enJRZDhTZnRzc1p4MExDRWhR" target="rrrrrrr">
 			Mes oeuvres d'art</a>
-        <img id="fond" src="img/fond.png" width="500">
+
 
 
         <a href="https://www.youtube.com/channel/UCKTaV9wVtG0Kq6OvIY-Q52w" target="zabbi">Ma chaine Youtube</a>
-        <img src="https://lh3.googleusercontent.com/a-/AOh14GhTrywQLpGfdKFHn0tQa1j-1yfD4NwgG7rnpb031V8=s600-k-no-rp-mo">
+
 
     </div>
 
