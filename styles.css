@@ -1,27 +1,92 @@
 body {
-    color: white;
-    background-color: black;
-}
-
-svg,
-img {
-    background-color: darkred;
-    max-width: 10vw;
-    border-radius: 10px;
-}
-
-line {
-    stroke: black;
+    color: darkred;
+    background-color: lightsalmon;
+    font-size: xx-large;
+    font-family: "Consolas", monospace, 'Courier New', Courier;
 }
 
 a {
     color: orangered;
 }
 
+svg {
+    width: 5em;
+    height: 5em;
+    border-radius: 5px;
+}
+
+.icon {
+    fill: orangered;
+}
+
+#defin {
+    width: 0px;
+    height: 0px
+}
+
+#inst:hover .icon {
+    fill: url(#inst);
+}
+
+#git:hover .icon {
+    fill: url(#git);
+}
+
+#sptfy:hover .icon {
+    fill: url(#sptfy);
+}
+
+#ggl:hover .icon {
+    fill: url(#ggl);
+}
+
+#discord:hover .icon {
+    fill: url(#discord);
+}
+
 a:visited {
-    color: darkred;
+    color: orangered;
 }
 
 a:hover {
     color: red;
+}
+
+button {
+    background-color: darkred;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-size: inherit;
+}
+
+button:hover {
+    background-color: red;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 50%;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#titre {
+    height: 100vh;
+    align-content: center;
+}
+
+#titre_text {
+    position: relative;
+    top: 25%;
+    transform: translateY(-50%);
+}
+
+#menu {
+    position: absolute;
+    bottom: 0px;
 }
