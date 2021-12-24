@@ -5,6 +5,14 @@ body {
     font-family: "Consolas", monospace, 'Courier New', Courier;
 }
 
+p>a {
+    text-decoration: none;
+}
+
+purplePD {
+    color: purple;
+}
+
 a {
     color: orangered;
 }
@@ -49,6 +57,10 @@ svg {
 
 #discord:hover .icon {
     fill: url(#discord);
+}
+
+#ytb:hover .icon {
+    fill: url(#ytb);
 }
 
 a:visited {

@@ -8,7 +8,7 @@
     <script type="text/javascript">
         document.cookie = null
     </script>
-    <title>momoladebrouill</title>
+    <title>The µ website</title>
 
 </head>
 
@@ -19,9 +19,9 @@
     <!--script type="text/javascript " src="waves.js "></script-->
     <div id="titre">
         <div id="titre_text">
-            <h1>Momoladebrouill</h1>
+            <h1>The µ website</h1>
             <p>
-                ℕℤⅅℚℝℂ
+                genre là où vous pouvez découvrir toutes mes bétises t'as capté ?🤌
             </p>
         </div>
         <div id="menu">
@@ -34,7 +34,7 @@
             </div>
         </div>
     </div>
-    <p>
+    <p id="PARA">
         <a href="https://youtu.be/bkiFH9k8Kek ">Belle journée à vous</a>, <br> Je suis le capitaine <a href="https://www.youtube.com/watch?v=KS-fBZWeqnk ">µ</a>, membre officiel de la <a href="https://mdrs-corp.github.io">MdrsCorp</a> et en charge de
         la garde du grand
         <a href="img/acc.jpg ">Abdel Couscous</a> à plein temps. Actuellement en <a href="crispy.html ">adolescence</a> assez marquée par un manque d'énergie constant (principalement du aux fortes chaleures locales), je suis un fan de Hugh grant et j'élève
@@ -48,69 +48,70 @@
         <button onclick="fromager() " id="autre ">Découvrir !</button>
         <script type="text/javascript ">
             let mots = [
-                "Florian j 'ai l'impression tes pets ils ont toujours le même bruit ",
-                "le masque c 'est sur le nez !",
+                "Florian j'ai l'impression tes pets ils ont toujours le même bruit.",
+                "Le masque c'est sur le nez !",
                 "Non.",
                 "Les nouilles crues ne se mangent pas",
-                "Une phrase c'est sujet verbe complément ",
-                "(a+b)²=a²+2ab+b² ",
-                "Si ton tonton tond ton tonton, ton tonton tondu sera ",
-                "César est mort ",
-                "Paul se pèle au pôle dans sa pile de pulls et de polos pales ",
-                "La clim ' d'humour man qui fait des rollers ",
-                "Attention à la mousse! ",
-                "Il y 'a vingt six lettres dans l'alphabet pourtant dans cette phrase il y 'en a que 24 différentes",
-                " 2b || !2b telle est la question",
-                " Paul est mort RIP Paul",
-                "Humour, toujours",
+                "Une phrase c'est <u>sujet</u>+<u>verbe</u>+<u>complément</u>.",
+                "(a+b)² = a²+2ab+b², c'est comme ça",
+                "Si ton tonton tond ton tonton, ton tonton tondu sera.",
+                "César est mort.",
+                "Paul se pèle au pôle dans sa pile de pulls et de polos pales.",
+                "<i>La clim d'humour man qui fait des rollers</i>",
+                "Attention à la mousse!",
+                "Il y'a vingt six lettres dans l'alphabet pourtant dans cette phrase il n'y en a que 24 différentes. (vous pouvez verifier, ce morceau ne comptant pas)",
+                "2b||!2b telle est la question 😶‍🌫️",
+                "Paul est mort RIP Paul",
+                "Humour, toujours !",
                 "Chacule pom polom pom",
-                "zabolomock",
+                "Zabolomock",
                 "J E A N",
                 "Oui.",
-                "Mais en vrai la nature sah ~ Florian Muratore",
-                "Bonum vinium la edificat cor hominis *danse élégante*",
-                "L'amour c 'est comme les pets, si tu dois forcer c'est certainement du caca ",
-                "Si un bar te passes en haut, on peut dire que le Bartolomeo ! ",
-                "Florian, il aime ses couilles, pourtant il n 'est pas PD",
+                '"Mais en vrai la nature sah" ~ Florian Muratore',
+                "Bonum vinium la edificat cor hominis <i>*danse élégante*</i>",
+                '"L\'amour c\'est comme les pets, si tu dois forcer c\'est certainement du caca" ~ HGGSP Quote',
+                "Si un bar te passes en haut, on peut dire que le Bartolomeo ! ~ 💐 Quote",
+                '"Florian, il aime ses couilles, pourtant il n\'est pas PD" ~ Gay Quote',
                 "On peut mettre des classes dans une liste et des listes dans des classes",
                 "Relate à balle",
-                'BUG BUG BUG BUG BUG "Madame ça bug" ',
-                "La liberté commence où l'ignorance finit ~ Seigneur Muselier(sous couverture d 'un panel de lycéens)",
+                'BUG BUG BUG BUG BUG : "Madame ça bug"',
+                '"La liberté commence où l\'ignorance finit" ~ Seigneur Muselier(sous couverture d\'un panel de lycéens)',
                 "Hypo et tata yeah ! Hypo et tata yeaaah. Hypo et touki touki hypo et touki touki yeaaa!",
-                "Dans la foret d'Amazonie y a un arbre qui s 'appelle l'Hévéa et qui sert a fabriquer le caoutchouc Ducoup quand tu achète un pneu au final tu paie la D 'hévéa",
-                "Dans le monde des fous le borgne n'as plus qu 'un œil ~ Dicton STI",
-                "Pour vous, une OlarriQuote : Arthur Plee vous êtes une Plaie",
-                "Depuis que j'ai appris que l 'humanité entière est peut être bâti sur un mensonge, je me prend toutes les chaises ~ Spé HGGSP quote",
-                "Pas besoin de venir en BG quand on l'est "
+                "Dans la foret d'Amazonie y a un arbre qui s 'appelle l'Hévéa et qui sert a fabriquer le caoutchouc ducoup quand tu achète un pneu au final tu paie la d'hévéa",
+                '"Dans le monde des fous le borgne n\'as plus qu\'un œil" ~ Dicton STI',
+                "Pour vous, une OlarriQuote : <i>Arthur Plee vous êtes une Plaie</i>",
+                '"Depuis que j\'ai appris que l\'humanité entière est peut être bâti sur un mensonge, je me prend toutes les chaises" ~ Spé HGGSP quote',
+                "Pas besoin de devenir en BG quand on l'est",
+                "ℕℤⅅℚℝℂ"
 
-            ]
-            span = document.getElementById('fromage')
-            bouton = document.getElementById('autre ')
-            zic = new Audio('https://static.bodet-time.com/mp3/Melodie-P-Carillon-fin.mp3')
+            ];
+            const span = document.getElementById('fromage');
+            const bouton = document.getElementById('autre ');
+            const zic = new Audio('https://static.bodet-time.com/mp3/Melodie-P-Carillon-fin.mp3');
+            let index;
 
             function fromager() {
                 zic.pause();
                 zic.currentTime = 0;
-                zic.play()
-                index = parseInt(Math.random() * mots.length)
-                span.innerHTML = mots[index]
-                mots.splice(index, 1)
-                bouton.textContent = "Une autre ! (plus que " + mots.length + ") "
+                zic.play();
+                index = parseInt(Math.random() * mots.length);
+                span.innerHTML = mots[index];
+                mots.splice(index, 1);
+                bouton.textContent = "Une autre ! (plus que " + mots.length + ") ";
                 if (mots.length == 0) {
-                    span.textContent = "VOUS AVEZ TOUT VU AAAH "
-                    bouton.style.display = "none "
+                    span.textContent = "VOUS AVEZ TOUT VU AHAHAHA ";
+                    bouton.style.display = "none ";
                 }
             }
         </script>
     </p>
 
     <h2 id="1">Un peu d'animations</h2>
-    <p>
-        <a href="https://momoladebrouill.github.io/Fontaines/ ">Des fontaines magiques !</a><br>
-        <a href="https://momoladebrouill.github.io/Graffeur/ ">Des graffitis à la folie !</a><br>
-        <a href="https://momoladebrouill.github.io/Artist/ ">Des pixel arts magnifiques !</a><br>
-        <a href="https://momoladebrouill.github.io/The-trigonomistor/ ">Un jeu de GAMER</a><br>
-    </p>
+    <a href="https://momoladebrouill.github.io/Fontaines/ ">Des fontaines magiques</a><br>
+    <a href="https://momoladebrouill.github.io/Graffeur/ ">Des graffitis à la folie</a><br>
+    <a href="https://momoladebrouill.github.io/Artist/ ">Des pixel arts magnifiques</a><br>
+    <a href="https://momoladebrouill.github.io/The-trigonomistor/ ">Un jeu de GAMER</a><br>
+    <a href="https://momoladebrouill.github.io/Bombers/ ">Un jeu de PAPY PAPY PAPY</a><br>
     <p>
         Merci à
         <purplePD>Thomas big T</purplePD> pour m'avoir aidé et ainsi me montrer le pouvoir du JavaScripting
@@ -121,16 +122,12 @@
         <a href="stories/index.html " target="_WHITE ">Coin du feu</a>
 
 
-        <a href="favs/favri.html ">Surf sur le net</a>
+        <a href="favs/favri.html " target="zebbb">Surf sur le net</a>
 
 
 
         <a id="maison " href="https://photos.google.com/share/AF1QipPooyzxa6Ev8KH6i6meFavhKCNvLpDMETlsLwbrc5uHZ5843bmszqpqmDnUtsIWnw?key=MGNtUE5sbU02Smw3enJRZDhTZnRzc1p4MExDRWhR " target="rrrrrrr ">
 			Mes oeuvres d'art</a>
-
-
-
-        <a href="https://www.youtube.com/channel/UCKTaV9wVtG0Kq6OvIY-Q52w " target="zabbi ">Ma chaine Youtube</a>
 
 
     </div>
@@ -153,16 +150,20 @@
                     <stop offset="100%" stop-color="#0F9D58" />
                 </linearGradient>
                 <linearGradient id="git">
-                    <stop offset="0%" stop-color="darkblue" />
-                    <stop offset="100%" stop-color="purple" />
+                    <stop offset="0%" stop-color="purple" />
+                    <stop offset="100%" stop-color="darkviolet" />
                 </linearGradient>
                 <linearGradient id="sptfy">
-                    <stop offset="0%" stop-color="lightgreen" />
+                    <stop offset="0%" stop-color="darkgreen" />
                     <stop offset="100%" stop-color="green" />
                 </linearGradient>
                 <linearGradient id="discord">
                     <stop offset="0%" stop-color="lightblue" />
                     <stop offset="100%" stop-color="blue" />
+                </linearGradient>
+                <linearGradient id="ytb">
+                    <stop offset="0%" stop-color="darkred" />
+                    <stop offset="100%" stop-color="red" />
                 </linearGradient>
             </defs>
         </svg>
@@ -171,7 +172,6 @@
             <svg width="512 " height="512" viewBox="0 0 24 24 " id="git">
                 <path d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z" class="icon " />
             </svg>
-
         </a>
 
         <a href="https://www.instagram.com/momoladebrouill/ " target="b ">
@@ -190,6 +190,12 @@
                 1.543-.265 1.543zm1.303-3.173c-.113-.03-.08.069-.597-.203-3.025-1.79-7.533-2.512-11.545-1.423-.232.063-.358.126-.576.126-1.071 0-1.355-1.611-.188-1.94 4.716-1.325 9.775-.552 13.297 1.543.392.232.547.533.547.953-.005.522-.411.944-.938.944zm-13.627-7.485c4.523-1.324
                 11.368-.906 15.624 1.578 1.091.629.662 2.22-.498 2.22l-.001-.001c-.252 0-.407-.063-.625-.189-3.443-2.056-9.604-2.549-13.59-1.436-.175.048-.393.125-.625.125-.639 0-1.127-.499-1.127-1.142 0-.657.407-1.029.842-1.155z " class="icon " />
              </svg>
+        </a>
+        <a href="https://www.youtube.com/channel/UCKTaV9wVtG0Kq6OvIY-Q52w" target="YA ROBI">
+            <svg width="512" height="512" viewBox="0 0 24 24" id="ytb">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                class ="icon"/>
+            </svg>
         </a>
     </div>
 
