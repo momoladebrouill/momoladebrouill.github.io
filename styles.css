@@ -1,6 +1,6 @@
 body {
-    color: darkred;
-    background-color: lightsalmon;
+    color: rgb(255, 255, 255);
+    background-color: rgb(80, 0, 0);
     font-size: xx-large;
     font-family: "Consolas", monospace, 'Courier New', Courier;
 }
@@ -14,7 +14,15 @@ purplePD {
 }
 
 a {
+    color: red;
+}
+
+a:visited {
     color: orangered;
+}
+
+a:hover {
+    color: yellow;
 }
 
 iframe {
@@ -63,14 +71,6 @@ svg {
     fill: url(#ytb);
 }
 
-a:visited {
-    color: orangered;
-}
-
-a:hover {
-    color: red;
-}
-
 button {
     background-color: darkred;
     color: white;
@@ -92,7 +92,7 @@ button:hover {
 }
 
 .card:hover {
-    background-color: white;
+    background-color: rgb(190, 0, 0);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
