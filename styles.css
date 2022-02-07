@@ -2,11 +2,18 @@ body {
     color: rgb(255, 255, 255);
     background-color: rgb(80, 0, 0);
     font-size: xx-large;
+    text-align: justify;
+    text-justify: inter-word;
     font-family: "Consolas", monospace, 'Courier New', Courier;
 }
 
 p>a {
     text-decoration: none;
+}
+
+#chapters {
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 purplePD {
@@ -89,11 +96,15 @@ button:hover {
     width: fit-content;
     text-align: center;
     border-radius: 25px;
+    display: inline-block;
 }
 
 .card:hover {
-    background-color: rgb(190, 0, 0);
+    --color: rgb(190, 0, 0);
+    background-color: var(--color);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: var(--color);
+    box-shadow: 0 0 5px var(--color), 0 0 25px var(--color), 0 0 50px var(--color), 0 0 200px var(--color);
 }
 
 #titre {
