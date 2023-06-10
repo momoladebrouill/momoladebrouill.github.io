@@ -4,7 +4,7 @@ let mots = [
     "Non.",
     "Les nouilles crues ne se mangent pas",
     "Une phrase c'est <u>sujet</u>+<u>verbe</u>+<u>complément</u>.",
-    "(a+b)² = a²+2ab+b², c'est comme ça",
+    "(a+b)² = a²+2ab+b², c'est comme ça, c'est le binome de Newton",
     "Si ton tonton tond ton tonton, ton tonton tondu sera.",
     "César est mort.",
     "Paul se pèle au pôle dans sa pile de pulls et de polos pales.",
@@ -33,7 +33,9 @@ let mots = [
     "Pour vous, une OlarriQuote : <i>Arthur Plee vous êtes une Plaie</i>",
     '"Depuis que j\'ai appris que l\'humanité entière est peut être bâti sur un mensonge, je me prend toutes les chaises" ~ Spé HGGSP quote',
     "Pas besoin de devenir en BG quand on l'est",
-    "ℕℤⅅℚℝℂ"
+    "ℕℤⅅℚℝℂ",
+    "Je chie donc j'essuie",
+    "Toute fonction continue sur un segment y est uniformément continue (Théorème de Heine)"
 
 ];
 const span = document.getElementById('fromage');
