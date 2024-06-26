@@ -1,134 +1,65 @@
-body {
-    color: rgb(255, 255, 255);
-    background-color: rgb(80, 0, 0);
-    font-size: xx-large;
-    text-align: justify;
-    text-justify: inter-word;
-    font-family: "Consolas", monospace, 'Courier New', Courier;
+
+html {
+    height: 100%;
+    display: table;
+    margin: auto;
 }
 
-p>a {
-    text-decoration: none;
-}
-
-#chapters {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-purplePD {
-    color: purple;
-}
-
-a {
-    color: red;
-}
-
-a:visited {
-    color: orangered;
-}
-
-a:hover {
-    color: yellow;
-}
-
-iframe {
-    width: 100%;
+body{
+    display: table-cell;
+    vertical-align: middle;
+    background-color: blanchedalmond;
+    font-family: 'Courier New', Courier, monospace;    
     height: 100vh;
+    text-align: center;
+}
+
+p{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+a{
+    color: brown;
+}
+
+a:hover{
+    color: chocolate;
+}
+
+a:visited{
+    color:orangered
 }
 
 svg {
-    width: 5em;
-    height: 5em;
-    border-radius: 5px;
-}
-
-.icon {
-    fill: orangered;
-    border-color: aliceblue;
-    border-width: 1px;
-    transition: fill 0.5s ease;
-}
-
-#defin {
-    width: 0px;
-    height: 0px
-}
-
-#inst:hover .icon {
-    transition: 0.2s;
-    fill: url(#inst);
-}
-
-#git:hover .icon {
-    fill: url(#git);
-}
-
-#sptfy:hover .icon {
-    fill: url(#sptfy);
-}
-
-#ggl:hover .icon {
-    fill: url(#ggl);
-}
-
-#discord:hover .icon {
-    fill: url(#discord);
-}
-
-#ytb:hover .icon {
-    fill: url(#ytb);
-}
-
-button {
-    background-color: darkred;
-    color: white;
-    border-radius: 10px;
-    border: none;
-    padding: 10px;
-    font-size: inherit;
-}
-
-button:hover {
-    background-color: red;
+    width: 2em;
+    height: 2em;
+    border-radius: 3px;
 }
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: fit-content;
     text-align: center;
-    border-radius: 25px;
+    padding: 10px;
+    border-radius: 10px;
     display: inline-block;
 }
 
 .card:hover {
-    --color: rgb(190, 0, 0);
+    --color: lightgreen
     background-color: var(--color);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background: var(--color);
     box-shadow: 0 0 5px var(--color), 0 0 25px var(--color), 0 0 50px var(--color), 0 0 200px var(--color);
 }
 
-#titre {
-    height: 100vh;
-    align-content: center;
+button {
+    background-color: bisque;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
 }
 
-#titre_text {
-    position: relative;
-    top: 25%;
-    transform: translateY(-50%);
-}
-
-#menu {
-    position: absolute;
-    bottom: 0px;
-}
-
-#muchodemomo {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    background-color: brown;
+button:hover {
+    background-color: whitesmoke;
 }

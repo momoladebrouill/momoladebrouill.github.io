@@ -35,7 +35,8 @@ let mots = [
     "Pas besoin de devenir en BG quand on l'est",
     "ℕℤⅅℚℝℂ",
     "Je chie donc j'essuie",
-    "Toute fonction continue sur un segment y est uniformément continue (Théorème de Heine)"
+    "Toute fonction continue sur un segment y est uniformément continue (Théorème de Heine)",
+    "Les méduses vivent en dimension 0"
 
 ];
 const span = document.getElementById('fromage');
