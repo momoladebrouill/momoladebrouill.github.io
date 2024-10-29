@@ -1,5 +1,8 @@
 let mots = [
     "Florian j'ai l'impression tes pets ils ont toujours le même bruit.",
+    "On ne peut pas gagner au loto sans avoir acheté de ticket.",
+    '"Les SDF qui ont des maisons" ~ Flo',
+    '"Gubba nub nub doo rah kah" (l\'important c\'est de dormir la nuit)',
     "Le masque c'est sur le nez !",
     "Non.",
     "Les nouilles crues ne se mangent pas",
